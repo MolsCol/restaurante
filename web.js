@@ -106,7 +106,7 @@ function generateReport() {
     reportOutput.textContent = 'Mesas Ocupadas:\n\n';
 
     occupiedTables.forEach(table => {
-         reportOutput.textContent += `Mesa ${table.number} - Cliente: ${table.customer} - Hora: ${table.time}\n`;;
+         reportOutput.textContent += `Mesa ${table.number} - Cliente: ${table.customer} - Fecha y Hora: ${table.time}\n`;;
     });
 
     if (occupiedTables.length === 0) {
@@ -114,4 +114,5 @@ function generateReport() {
     }
 }
 releaseTable();
+
 
